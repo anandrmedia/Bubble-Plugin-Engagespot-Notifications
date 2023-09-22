@@ -1,0 +1,81 @@
+{
+    "add_hover_pressed": true,
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 34,
+        "width": 34
+    },
+    "display": "Engagespot Notification Inbox",
+    "events": {
+        "ABi": {
+            "caption": "Notification Clicked",
+            "name": "notification_click"
+        }
+    },
+    "fields": {
+        "ABJ": {
+            "caption": "Bell Icon Color",
+            "default_val": "rgba(107, 107, 107, 1)",
+            "editor": "Color",
+            "in_style": false,
+            "name": "bell_icon_color",
+            "rank": 0
+        },
+        "ABK": {
+            "caption": "Primary Branding Color",
+            "default_val": "rgba(46, 91, 242, 1)",
+            "editor": "Color",
+            "name": "primary_branding_color",
+            "rank": 1
+        },
+        "ABp": {
+            "caption": "Enable Notification Sound",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "notification_sound",
+            "rank": 2
+        },
+        "ABq": {
+            "caption": "Sound File URL",
+            "default_val": "https://engagespot-website.s3.us-west-2.amazonaws.com/public/marimba_02667e81f1.mp3?updated_at=2023-06-08T10:34:50.600Z",
+            "editor": "StaticText",
+            "name": "notification_sound_src",
+            "optional": false,
+            "rank": 3
+        }
+    },
+    "icon": "ion-ios-bell-outline",
+    "property_applications": {
+        "MinWidth": false,
+        "resizable": false
+    },
+    "states": {
+        "ABk": {
+            "caption": "Notification ID",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n    return null\n}"
+            },
+            "is_list": false,
+            "name": "clicked_notification_id",
+            "value": "text"
+        },
+        "ABl": {
+            "caption": "Custom Data 1",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n    return null;\n}"
+            },
+            "name": "bb_custom_data_1",
+            "value": "text"
+        },
+        "ABm": {
+            "caption": "Custom Data 2",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n    return null;\n}"
+            },
+            "name": "bb_custom_data_2",
+            "value": "text"
+        }
+    },
+    "support_autobinding": false
+}

@@ -1,0 +1,33 @@
+{
+    "category": "plugins",
+    "display": "Engagespot - Update user profile",
+    "fields": {
+        "ABc": {
+            "caption": "Profile data",
+            "doc": "Additional attributes to be set in Engagespot for your user.",
+            "editor": "key_value_list",
+            "name": "profile_data",
+            "rank": 2,
+            "value": "text"
+        },
+        "ABd": {
+            "caption": "phoneNumber",
+            "doc": "Phone number of this user in international format, including country code (Example +1 4444444444)",
+            "editor": "DynamicValue",
+            "name": "phonenumber",
+            "optional": true,
+            "rank": 1,
+            "value": "text"
+        },
+        "ABe": {
+            "caption": "User",
+            "doc": "Choose the user's whose profile should be updated.",
+            "editor": "DynamicValue",
+            "name": "user",
+            "optional": false,
+            "rank": 0,
+            "value": "user"
+        }
+    },
+    "type": "server_side"
+}

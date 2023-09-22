@@ -1,0 +1,121 @@
+{
+    "category": "plugins",
+    "display": "Engagespot - Send Notification",
+    "fields": {
+        "AAO": {
+            "caption": "notification_title",
+            "doc": "If you are using templated notifications, this field is not required.",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "name": "notification_title",
+            "optional": true,
+            "rank": 0,
+            "value": "text"
+        },
+        "AAP": {
+            "caption": "recipient",
+            "doc": "Select a user to send this notification to. If you want to send it to multiple users, use the multiple_recipients field instead.",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "name": "recipient",
+            "optional": true,
+            "rank": 2,
+            "value": "user"
+        },
+        "ABL": {
+            "caption": "notification_message",
+            "editor": "DynamicValue",
+            "name": "notification_message",
+            "optional": true,
+            "rank": 3,
+            "value": "text"
+        },
+        "ABM": {
+            "caption": "notification_url",
+            "editor": "DynamicValue",
+            "name": "notification_url",
+            "optional": true,
+            "rank": 4,
+            "value": "text"
+        },
+        "ABN": {
+            "caption": "notification_icon",
+            "editor": "DynamicValue",
+            "name": "notification_icon",
+            "optional": true,
+            "rank": 5,
+            "value": "text"
+        },
+        "ABO": {
+            "caption": "override",
+            "default_val": "{}",
+            "doc": "Override object in JSON format. Read Engagespot REST API documentation to know more about override.",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "override",
+            "optional": true,
+            "rank": 7,
+            "value": "text"
+        },
+        "ABV": {
+            "caption": "multiple_recipients",
+            "doc": "Sends the notification to a list of users.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "multiple_recipients",
+            "optional": true,
+            "rank": 8,
+            "value": "user"
+        },
+        "ABW": {
+            "caption": "category",
+            "doc": "Tag a category for this notification. Categories help your users set their notification preferences.",
+            "editor": "DynamicValue",
+            "name": "category",
+            "optional": true,
+            "rank": 6,
+            "value": "text"
+        },
+        "ABZ": {
+            "caption": "Template ID",
+            "doc": "To send templated notifications, enter the id of the template you created in Engagespot dashboard.",
+            "editor": "DynamicValue",
+            "name": "template_id",
+            "optional": true,
+            "rank": 1,
+            "value": "text"
+        },
+        "ABa": {
+            "caption": "Data Attributes",
+            "default_val": "{}",
+            "doc": "Any additional custom key-value pair attributes (in JSON format) that you want to send. This is useful to replace placeholders if you are sending templated notifications.",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "long_text": true,
+            "name": "data",
+            "optional": true,
+            "rank": 11,
+            "value": "text"
+        },
+        "ABn": {
+            "caption": "Custom Data 1",
+            "doc": "Pass any custom data that will be available on the clicked event state",
+            "editor": "DynamicValue",
+            "name": "bb_custom_data_1",
+            "optional": true,
+            "rank": 9,
+            "value": "text"
+        },
+        "ABo": {
+            "caption": "Custom Data 2",
+            "doc": "Pass any custom data that will be available on the clicked event state",
+            "editor": "DynamicValue",
+            "name": "bb_custom_data_2",
+            "optional": true,
+            "rank": 10,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": false
+}

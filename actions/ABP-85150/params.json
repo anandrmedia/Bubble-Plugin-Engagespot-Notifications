@@ -1,0 +1,14 @@
+{
+    "category": "plugins",
+    "display": "Engagespot - Generate User Signature",
+    "return_value": {
+        "ABQ": {
+            "caption": "signature",
+            "is_list": false,
+            "name": "signature",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}
