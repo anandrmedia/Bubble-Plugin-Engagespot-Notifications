@@ -1,6 +1,6 @@
 {
     "dependencies": {
-        "plugin_api_version": "3",
+        "plugin_api_version": "4",
         "use_jquery": true
     },
     "shared_keys": {
@@ -11,6 +11,14 @@
         "ABD": {
             "caption": "X-ENGAGESPOT-API-KEY",
             "type": "client_safe"
+        },
+        "ACC": {
+            "caption": "OPTIONAL-BASE-URL",
+            "type": "client_safe"
+        },
+        "ACW": {
+            "caption": "OPTIONAL-SIGNING-KEY-BASE64",
+            "type": "secure"
         }
     }
 }

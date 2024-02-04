@@ -2,14 +2,16 @@
     "categories": {
         "0": "email",
         "1": "technical",
-        "2": "social network"
+        "2": "social network",
+        "3": "small business",
+        "4": "productivity"
     },
     "demo_page": "",
-    "description": "Send In-App, Email, Web Push, Mobile Push, SMS, WhatsApp and Slack notifications from your Bubble app through actions. \n\nIt also allows you to embed an in-app notification center inside your app.\n\nInstead of integrating multiple services like Twilio for SMS, Onesignal for push, Sendgrid for email etc, Engagespot combines everything in one action.\n\nSuitable for apps with collaborative nature such as Todo lists, social networks, task management apps etc.\n\n\n***\n\n⚡ Features\n\n* Realtime in-app notification widget with actions.\n* Support for email, web & mobile push, SMS, Whatsapp messages.\n* Notification click action workflows.\n* Notification aggregation and batching.\n* Notification delivery logs.",
+    "description": "Send real-time In-app, email, web push, mobile push, sms, WhatsApp, and slack notifications from your Bubble app with a single action. \n\nIt also allows you to embed an in-app notification center inside your app that works using real-time websockets.\n\nInstead of integrating multiple services like Twilio for SMS, Onesignal for push, Sendgrid for email, etc, Engagespot combines everything in one action.\n\nSuitable for apps with a collaborative nature such as Todo lists, social networks, task management apps, etc.\n\n\n***\n\n⚡ Features\n\n* Realtime in-app notification widget with actions.\n* Support for email, web & mobile push, SMS, Whatsapp messages.\n* Notification event triggered workflows.\n* Notification aggregation and batching.\n* Notification delivery logs.",
     "image": "//meta-l.cdn.bubble.io/f1685104983228x476279833794199200/ICON_3_1%20%281%29.png",
     "license": "open_source",
     "link": "https://engagespot.co",
     "name": "Engagespot Notifications",
     "plugin_instructions": "Make sure you have created a FREE Engagespot acccount (https://portal.engagespot.co/auth/register).\n\nRead Plugin Setup Guide -\nhttps://documentation.engagespot.co/docs/bubble-io-plugin/using-engagespot-in-bubble-app",
-    "sa_node_version": 14
+    "sa_node_version": 18
 }

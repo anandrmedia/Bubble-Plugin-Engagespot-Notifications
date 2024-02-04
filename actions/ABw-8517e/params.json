@@ -1,0 +1,23 @@
+{
+    "category": "plugins",
+    "display": "Create or Update User",
+    "fields": {
+        "ABx": {
+            "caption": "user",
+            "doc": "The Bubble user who should be created in Engagespot. Make sure the email property of this user is accessible as per your app's privacy settings.",
+            "editor": "DynamicValue",
+            "name": "user",
+            "rank": 0,
+            "value": "user"
+        },
+        "ABy": {
+            "caption": "profile_data",
+            "doc": "Optional profile data.",
+            "editor": "key_value_list",
+            "name": "profile_data",
+            "rank": 1,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

@@ -1,9 +1,9 @@
 async function(properties, context) {
     
     const apiBaseURL = (context.keys['OPTIONAL-BASE-URL'] && context.keys['OPTIONAL-BASE-URL'].trim()) ? context.keys['OPTIONAL-BASE-URL'] : "https://api.engagespot.co";
+    
 
     let userId = await properties.user.get('email');
-    let phoneNumber = properties.phonenumber;
     
     let attributes = {}
     
@@ -23,14 +23,10 @@ async function(properties, context) {
             'X-ENGAGESPOT-API-SECRET':context.keys['X-ENGAGESPOT-API-SECRET']
     	},
     	body:JSON.stringify({
-    
-        	"phoneNumber": phoneNumber,
             ...attributes
    
    		})
   	}
     
     await context.v3.request(options);
-
-
 }

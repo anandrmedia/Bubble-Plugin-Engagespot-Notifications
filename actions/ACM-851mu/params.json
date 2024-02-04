@@ -1,0 +1,29 @@
+{
+    "category": "plugins",
+    "display": "Update Notification State",
+    "fields": {
+        "ACN": {
+            "caption": "Notification ID",
+            "editor": "DynamicValue",
+            "name": "notification_id",
+            "rank": 0,
+            "value": "text"
+        },
+        "ACO": {
+            "caption": "State",
+            "editor": "DynamicValue",
+            "name": "state",
+            "rank": 1,
+            "value": "text"
+        },
+        "ACX": {
+            "caption": "Delete",
+            "default_val": "false",
+            "editor": "Dropdown",
+            "name": "delete",
+            "options": "true,false",
+            "rank": 2
+        }
+    },
+    "type": "client_side"
+}

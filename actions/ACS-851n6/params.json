@@ -1,0 +1,23 @@
+{
+    "category": "plugins",
+    "display": "Generate User Token",
+    "fields": {
+        "ACT": {
+            "caption": "User",
+            "editor": "DynamicValue",
+            "name": "user",
+            "rank": 0,
+            "value": "user"
+        }
+    },
+    "return_value": {
+        "ACV": {
+            "caption": "Token",
+            "name": "token",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}

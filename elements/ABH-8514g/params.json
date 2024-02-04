@@ -11,6 +11,14 @@
         "ABi": {
             "caption": "Notification Clicked",
             "name": "notification_click"
+        },
+        "ABr": {
+            "caption": "Notification Received",
+            "name": "notification_received"
+        },
+        "ACD": {
+            "caption": "An actionable notification is interacted",
+            "name": "notification_interacted"
         }
     },
     "fields": {
@@ -43,6 +51,16 @@
             "name": "notification_sound_src",
             "optional": false,
             "rank": 3
+        },
+        "ACF": {
+            "caption": "Blocks and their events to listen",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "long_text": true,
+            "name": "blocks_to_listen",
+            "optional": true,
+            "rank": 4,
+            "value": "text"
         }
     },
     "icon": "ion-ios-bell-outline",
@@ -74,6 +92,72 @@
                 "fn": "function(properties, context) {\n    return null;\n}"
             },
             "name": "bb_custom_data_2",
+            "value": "text"
+        },
+        "ABs": {
+            "caption": "Received notification ID",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n    return null;\n}"
+            },
+            "name": "received_notification_id",
+            "value": "text"
+        },
+        "ABt": {
+            "caption": "Received notification Title",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n    return null;\n}"
+            },
+            "is_list": false,
+            "name": "received_notification_title",
+            "value": "text"
+        },
+        "ABu": {
+            "caption": "Received notification message",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n    return null;\n}"
+            },
+            "name": "received_notification_message",
+            "value": "text"
+        },
+        "ABv": {
+            "caption": "received_notification_json",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n    return null;\n}"
+            },
+            "is_list": false,
+            "name": "received_notification_json",
+            "value": "text"
+        },
+        "ACG": {
+            "caption": "Interacted Block Id",
+            "initialization_code": {
+                "fn": "function(properties, context) {\nreturn null;\n}"
+            },
+            "name": "interacted_blockId",
+            "value": "text"
+        },
+        "ACH": {
+            "caption": "Interacted Event",
+            "initialization_code": {
+                "fn": "function(properties, context) {\nreturn null;\n}"
+            },
+            "name": "interacted_event",
+            "value": "text"
+        },
+        "ACI": {
+            "caption": "Interacted Notification ID",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n    return null;\n}"
+            },
+            "name": "interacted_notification_id",
+            "value": "text"
+        },
+        "ACJ": {
+            "caption": "Interacted Notification JSON",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n    return null;\n}"
+            },
+            "name": "interacted_notification_json",
             "value": "text"
         }
     },

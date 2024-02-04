@@ -1,23 +1,26 @@
-function(properties, context) {
+async function(properties, context) {
+    
+    const apiBaseURL = (context.keys['OPTIONAL-BASE-URL'] && context.keys['OPTIONAL-BASE-URL'].trim()) ? context.keys['OPTIONAL-BASE-URL'] : "https://api.engagespot.co";
     
    let mergedRecipientsArray = [];
     
    if(properties.multiple_recipients){
-       let multipleRecipientsList = properties.multiple_recipients.get(0, properties.multiple_recipients.length());
+       let multipleRecipientsList = await properties.multiple_recipients.get(0, await properties.multiple_recipients.length());
+       console.log(multipleRecipientsList);
        let multipleRecipientsArray = [];
 
        for(var i=0; i<multipleRecipientsList.length; i++){
-           multipleRecipientsArray.push(multipleRecipientsList[i].get('email'))
+           multipleRecipientsArray.push(await multipleRecipientsList[i].get('email'))
        }
     
        if(properties.recipient){
-   	      mergedRecipientsArray = [properties.recipient.get('email')].concat(multipleRecipientsArray);
+   	      mergedRecipientsArray = [await properties.recipient.get('email')].concat(multipleRecipientsArray);
        }else{
           mergedRecipientsArray = multipleRecipientsArray;
        }
    }else{
        
-       mergedRecipientsArray = [properties.recipient.get('email')]
+       mergedRecipientsArray = [await properties.recipient.get('email')]
    }
     
    let override = {}
@@ -42,7 +45,7 @@ function(properties, context) {
    
        
    options = {
-    url: "https://api.engagespot.co/v3/notifications",
+    url: apiBaseURL+"/v3/notifications",
     method: "POST",
     headers:{
             'Content-Type': 'application/json',
@@ -65,7 +68,7 @@ function(properties, context) {
    })
   }
     
-    context.request(options);
+    await context.v3.request(options);
     
 
 }
